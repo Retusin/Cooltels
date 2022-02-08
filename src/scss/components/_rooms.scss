@@ -1,0 +1,32 @@
+.rooms {
+  padding-bottom: 157px;
+
+  &__title {
+    margin: 0;
+    margin-bottom: 20px;
+  }
+
+  &__description {
+    margin: 0 auto;
+    margin-bottom: 34px;
+    max-width: 588px;
+    text-align: center;
+  }
+
+  &__btn {
+    display: block;
+    margin-bottom: 87px;
+    padding: 16px 32px;
+    width: max-content;
+  }
+
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+
+    @include mid-desktop {
+      flex-wrap: wrap;
+      justify-content: space-around;
+    }
+  }
+}

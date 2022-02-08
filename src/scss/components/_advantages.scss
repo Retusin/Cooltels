@@ -1,0 +1,41 @@
+.advantages {
+  padding-bottom: 130px;
+
+  &__box {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 33px;
+
+    &:nth-child(even) {
+      flex-direction: row-reverse;
+      margin-right: 107px;
+
+      @include tablet {
+        flex-direction: row;
+        margin-right: 0;
+      }
+    }
+
+    @include tablet {
+      flex-wrap: wrap;
+    }
+  }
+
+  &__content {
+    padding-top: 113px;
+  }
+
+  &__title {
+    margin: 0;
+    margin-bottom: 26px;
+  }
+
+  &__description {
+    margin: 0;
+    max-width: 584px;
+  }
+
+  &__img {
+    margin-right: 107px;
+  }
+}

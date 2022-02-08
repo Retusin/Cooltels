@@ -1,0 +1,92 @@
+.footer {
+  padding-top: 119px;
+  padding-bottom: 64px;
+  background-color: #0b265a;
+
+  &__container {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+
+    @include tablet {
+      flex-wrap: wrap;
+      align-items: center;
+    }
+  }
+
+  &__left {
+    margin-bottom: 50px;
+    max-width: 186px;
+  }
+
+  &__title {
+    margin: 0;
+    margin-bottom: 15px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 39px;
+    letter-spacing: -0.01em;
+    color: #fff;
+  }
+
+  &__description {
+    margin: 0;
+    margin-bottom: 34px;
+    font-size: 16px;
+    line-height: 28px;
+    color: #d9dbde;
+  }
+
+  &__social {
+    margin-left: 4px;
+  }
+
+  &__name {
+    margin: 0;
+    margin-bottom: 18px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: 0.01em;
+    color: #fff;
+  }
+
+  &__right {
+    display: flex;
+    justify-content: space-between;
+    margin-right: 65px;
+
+    @include mobile {
+      flex-wrap: wrap;
+    }
+  }
+
+  &__rooms {
+    margin-right: 103px;
+    margin-bottom: 50px;
+  }
+
+  &__reservation {
+    margin-right: 139px;
+    margin-bottom: 50px;
+  }
+}
+
+.footer-list {
+  &__item {
+    &:not(:last-child) {
+      margin-bottom: 13px;
+    }
+  }
+
+  &__link {
+    font-size: 16px;
+    line-height: 19px;
+    color: #d9dbde;
+  }
+}
+
+.footer-social__link {
+  margin-right: 17px;
+}

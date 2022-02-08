@@ -1,0 +1,32 @@
+// Ограничение макета
+$wrapper-max: 1440px !default;
+$wrapper-min: 280px !default;
+
+// Контейнер
+$container-max-widths: 1230px;
+$container-padding: 15px;
+
+// Контрольные точки
+$breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px,
+  xxl: 1400px,
+) !default;
+
+// Шрифт
+$font-family-base: "Inter", sans-serif;
+$font-size-base: 1.6rem;
+$line-height-base: 1.75;
+$font-weight-base: 400;
+$font-style-base: normal;
+
+// Цвета
+$color-bg-base: #fff;
+$color-text-base: #61594d;
+$white: #f7f7f7;
+$text-dark: #2c2321;
+$primary: #d6680f;
+$grey: #f5f5f5;

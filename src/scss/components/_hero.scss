@@ -1,0 +1,47 @@
+.hero {
+  padding-top: 250px;
+  padding-bottom: 390px;
+  background-image: url("../img/hero-bg.png");
+  background-position: 86% 40%;
+  background-repeat: no-repeat;
+
+  @include mid-desktop {
+    background: none;
+  }
+
+  @include mobile {
+    padding: 150px 0;
+  }
+
+  &__content {
+    max-width: 513px;
+  }
+
+  &__title {
+    margin: 0;
+    margin-bottom: 24px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 150%;
+    letter-spacing: -0.01em;
+    color: #192252;
+
+    @include mobile {
+      font-size: 40px;
+    }
+  }
+
+  &__description {
+    margin: 0;
+    margin-bottom: 40px;
+    max-width: 485px;
+    font-size: 18px;
+    line-height: 150%;
+    color: #848fac;
+  }
+
+  &__btn {
+    padding: 16px 32px;
+  }
+}

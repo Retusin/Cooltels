@@ -1,0 +1,47 @@
+@use "sass:math";
+@import url(https://fonts.googleapis.com/css?family=Inter:100,200,300,regular,500,600,700,800,900);
+@import url(https://fonts.googleapis.com/css?family=Montserrat:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic);
+
+
+@import "vars";
+@import "mixins";
+@import "fonts";
+@import "settings";
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  @include reset-model;
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+// Ограничение для макета
+.wrapper {
+  @include wrapper;
+  color: $color-text-base;
+  background-color: $color-bg-base;
+}
+
+.container {
+  @include container;
+}
+
+// подключения компонентов страницы
+@import "./components/header";
+@import "./components/nav";
+@import "./components/hero";
+@import "./components/hotel";
+@import "./components/advantages";
+@import "./components/rooms";
+@import "./components/choose";
+@import "./components/reviews";
+@import "./components/footer";
+
+// подключения компонентов страницы
+@import "./components/box";

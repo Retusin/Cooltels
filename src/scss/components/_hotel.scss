@@ -1,0 +1,49 @@
+.hotel {
+  padding-bottom: 160px;
+
+  &__container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: space-between;
+  }
+
+  &__content {
+    margin-top: 110px;
+    max-width: 690px;
+
+    @include mid-desktop {
+      max-width: 576px;
+    }
+
+    @include tablet {
+      flex-wrap: wrap;
+    }
+  }
+
+  &__img {
+    @include tablet {
+      margin: 0 auto;
+      width: 80%;
+      height: 80%;
+    }
+  }
+
+  &__title {
+    margin: 0;
+    margin-bottom: 24px;
+  }
+
+  &__description {
+    margin: 0;
+    margin-bottom: 12px;
+    max-width: 567px;
+  }
+
+  &__btn {
+    display: block;
+    margin-top: 32px;
+    padding: 16px 32px;
+    width: max-content;
+  }
+}

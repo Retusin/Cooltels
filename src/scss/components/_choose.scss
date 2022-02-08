@@ -1,0 +1,132 @@
+.choose {
+  padding-bottom: 100px;
+
+  &__container {
+    display: flex;
+    justify-content: space-between;
+
+    @include small {
+      flex-wrap: wrap;
+    }
+  }
+
+  &__info {
+    padding-top: 79px;
+  }
+
+  &__subtitle {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 150%;
+    color: #424f7b;
+  }
+
+  &__title {
+    margin: 0;
+    margin-top: 14px;
+    margin-bottom: 22px;
+  }
+
+  &__description {
+    margin: 0;
+    margin-bottom: 37px;
+    max-width: 384px;
+  }
+
+  &__btns {
+    margin-bottom: 50px;
+  }
+
+  &__btn {
+    padding: 16px 32px;
+
+    @include small-mobile {
+      padding: 12px 20px;
+    }
+
+    &--stroke {
+      margin-left: 20px;
+      padding: 0;
+
+      @include small-mobile {
+        margin-left: 10px;
+      }
+    }
+  }
+
+  &__accordion {
+    position: relative;
+    max-width: 588px;
+    filter: drop-shadow(0 4px 30px rgba(0, 0, 0, 0.07));
+
+    .accordion__control {
+      border-radius: 4px;
+      padding: 32px 38px 32px 36px;
+      height: 100px;
+      text-align: left;
+      background-color: #fff;
+
+      @include tablet {
+        width: 100%;
+      }
+
+      @include small-mobile {
+        padding: 32px 10px 32px 9px;
+      }
+    }
+
+    .accordion__title {
+      font-family: "Montserrat", sans-serif;
+      font-weight: 600;
+      font-size: 24px;
+      line-height: 150%;
+      color: #424f7b;
+
+      @include small-mobile {
+        font-size: 18px;
+      }
+    }
+
+    .accordion__content {
+      margin-bottom: 30px;
+      background-color: #fff;
+
+      p {
+        margin: -25px;
+        padding-top: 0;
+        padding-right: 31px;
+        padding-bottom: 36px;
+        padding-left: 42px;
+        font-size: 18px;
+        line-height: 150%;
+        color: #848fac;
+      }
+    }
+
+    .accordion__icon {
+      position: absolute;
+      right: 34px;
+      top: 36px;
+      display: flex;
+      align-items: center;
+      border-radius: 100%;
+      width: 40px;
+      height: 40px;
+      background-color: #ffece2;
+
+      @include small-mobile {
+        background: none;
+      }
+    }
+
+    .is-open {
+      .accordion__icon {
+        background-color: #424f7b;
+
+        @include small-mobile {
+          background: none;
+        }
+      }
+    }
+  }
+}

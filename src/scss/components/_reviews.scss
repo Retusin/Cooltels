@@ -1,0 +1,36 @@
+.reviews {
+  padding-bottom: 66px;
+}
+
+.reviews-slider {
+  padding-bottom: 50px;
+  text-align: center;
+
+  &__img {
+    margin-top: 30px;
+    margin-bottom: 40px;
+  }
+
+  &__description {
+    margin-bottom: 37px;
+    max-width: 783px;
+  }
+
+  &__name {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 150%;
+    color: #192252;
+  }
+
+  .swiper-pagination-bullet {
+    width: 8px;
+    height: 8px;
+    background-color: #fab047;
+  }
+
+  .swiper-pagination-bullet-active {
+    width: 12px;
+    height: 12px;
+  }
+}

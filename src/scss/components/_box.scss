@@ -1,0 +1,50 @@
+.box {
+  max-width: 384px;
+
+  &__img {
+    margin-bottom: 27px;
+  }
+
+  &__title {
+    margin: 0;
+    margin-bottom: 16px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 150%;
+    color: #000;
+  }
+
+  &__description {
+    margin: 0;
+    margin-bottom: 28px;
+    font-family: "Inter", sans-serif;
+    font-size: 18px;
+    line-height: 150%;
+    color: #848fac;
+  }
+
+  &__link {
+    position: relative;
+    padding-right: 40px;
+    font-size: 18px;
+    line-height: 150%;
+    color: #424f7b;
+
+    &::after {
+      content: "";
+      position: absolute;
+      right: 9px;
+      top: 5px;
+      width: 16px;
+      height: 13px;
+      background-image: url("../img/arrow.svg");
+      background-size: cover;
+      background-repeat: no-repeat;
+    }
+  }
+
+  @include small {
+    margin-bottom: 40px;
+  }
+}
